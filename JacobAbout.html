@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JacobAbout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #611f33;
+            font-family: "Pixelify Sans", sans-serif;
+            color: #fff;
+            text-align: center; 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: #a00048e0;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #eeb2cc;
+            text-align: center;
+            font-size: small;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-family: "Pixelify Sans", sans-serif;
+        }
+
+        nav a:hover {
+            background-color: #bd2d60;
+            color: #430e1d;
+        }
+
+        .active {
+            background-color: #681843;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            height: 100vh;
+            flex: 1;
+        }
+
+        .sign {
+            padding: 20px;
+            border: 6px solid #f9c4d4;
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+            background-image: linear-gradient(#a00048e0, rgb(211, 122, 144));
+            border-radius: 10px;
+            word-wrap: break-word;
+        }
+
+        .text-outline {
+            color: #f3a8c6;
+            font-size: 24px;
+            text-shadow: -1px -1px 0 #c55e5e, 1px -1px 0 #591199, -1px 1px 0 #326a3f, 2px 2px 0 #4e103b;
+            white-space: nowrap; 
+            overflow: hidden;
+        }
+
+        .text-outline2 {
+            color: #f3a8e5;
+            font-size: 29px;
+            text-shadow: -1px -1px 0 #c55e5e, 1px -1px 0 #591199, -1px 1px 0 #326a3f, 2px 2px 0 #4e103b;
+            padding-bottom: 10px;
+            white-space: nowrap; 
+            overflow: hidden;
+        }
+
+        .banner {
+            width: 100%; 
+            height: auto;
+            max-height: 100px;
+            padding-bottom: 20px;
+            border-radius: 40px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .banner img {
+            max-width: 100%;
+            border-radius: 40px;
+            height: auto;
+            display: inline-block;
+        }
+
+        footer {
+            margin-top: auto;
+            background-color: #a00048e0;
+            padding: 10px 0;
+            text-align: center;
+            color: #eeb2cc;
+            font-family: 'Pixelify Sans', sans-serif;
+        }
+
+        .vid {
+            width: 100%;
+            max-width: 320px;
+            margin-top: 20px;
+        }
+
+        #title {
+            background-color: #bd2d60;
+            color: #f3a8e5;
+            border-color: #681843;
+            border: 0;
+            font-size: 40px;
+            margin-bottom: 10px;
+            border-radius: 60px;
+            padding-top: -6px;
+            padding-bottom: 6px;
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+
+        .quote {
+            margin-bottom: 20px;
+            font-style: italic;
+            text-align: right;
+        }
+
+        .top-left {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .block-paragraph {
+            text-align: justify;
+            margin-bottom: 20px;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: auto; 
+            max-height: 150px;
+        }
+
+        .block-paragraph:hover {
+            overflow-y: scroll; 
+        }
+
+        @media screen and (max-width: 768px) {
+            .sign {
+                max-width: 90%;
+                height: auto;
+                word-wrap: break-word;
+            }
+
+            .text-outline,
+            .text-outline2 {
+                font-size: 18px;
+            }
+
+            .vid {
+                width: 100%;
+            }
+
+            .block-paragraph {
+                max-width: 90%;
+                flex-direction: column;
+                align-items: flex-start;
+                word-wrap: break-word;
+            }
+
+            .info-box {
+                margin-bottom: 10px;
+                word-wrap: break-word;
+                max-width: 90%;
+            }
+
+            .info-text {
+                word-wrap: break-word;
+                max-height: 100px;
+            }
+        }
+
+            #jumpscare-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw; 
+                height: 100vh; 
+                background-color: rgba(150, 8, 8, 0.5); 
+                z-index: 9999;
+                display: none; 
+            }
+
+            #jumpscare-gif {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 10000; 
+                display: none; 
+                height: auto;
+            }
+    
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <nav>
+            <a href="JacobWebsite.html">Home</a>
+            <a class="active" href="JacobAbout.html">About</a>
+            <a href="JacobPortfolio.html">Portfolio</a>
+            <a href="JacobContact.html">Contact</a>
+        </nav>
+
+
+
+        <div class="container">
+            <div class="sign">
+
+                <p class="text-outline">▃ ▄ ▅ ▆ ▇ █ █ ▇ ▆ ▅ ▄ ▃</p>
+
+                <div class="banner"><img src="banneraj.png"></div>
+
+                <h2 class="text-outline2">ABOUT ME !</h2>
+
+                    <div class="block-paragraph">
+                        <p>
+                            Anisia Jacob is a Grade 12 student from Mary Immaculate Parish Special School Inc (MIPSS) with a passion for art and technology. Thanks to her education, she has knowledge on how to build a computer, basic coding in languages like Python, Java, and knowledge in using HTML and CSS for website development. 
+                        </p>
+                        <br>
+                        <p> 
+                            Outside of computer related schoolwork, Anisia enjoys creating digital drawings as a hobby. Her other skills consist of graphic designing, photo and video editing, knowledge of how to use photoshop, etc. With decent communication skills and adaptability, especially in academic settings, she has managed to do well enough throughout her time in school. Over the course of her time being a student in MIPSS, which has lasted for her entire highschool years since seventh grade, she has learned and grown a lot as a person, and will continue to do so going forward.
+                        </p>
+                         
+                    </div>
+        
+                <button onclick="playJumpscare()" id="title">☺</button>
+                <div id="jumpscare-overlay"></div>
+                <img id="jumpscare-gif" src="jumpscare.gif" alt="Jumpscare GIF">
+                <audio id="jumpscare-audio" src="vine-boom.mp3"></audio>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="JacobWebsite.js"></script>
+
+    <footer style="background-color: #a00048e0; padding: 0.1px; text-align: center; color: #eeb2cc; font-family: 'Pixelify Sans', sans-serif;">
+        <p>&copy; 2024 Anisia Jacob. All rights reserved.</p>
+    </footer>
+</body>
+</html>

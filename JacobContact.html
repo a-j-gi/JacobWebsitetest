@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JacobContact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #611f33;
+            font-family: "Pixelify Sans", sans-serif;
+            color: #fff;
+        }
+
+        nav {
+            background-color: #a00048e0;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #eeb2cc;
+            text-align: center;
+            font-size: small;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #bd2d60;
+        }
+
+        .active {
+            background-color: #681843;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .sign {
+            padding: 20px;
+            border: 6px solid #f9c4d4;
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+            background-image: linear-gradient(#a00048e0, rgb(211, 122, 144));
+            border-radius: 10px;
+        }
+
+        .banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+
+        .banner img {
+            max-width: 100%;
+            max-height: 100%; 
+            padding-bottom: 50pxs;
+        }
+
+
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .contact-form {
+            max-width: 400px;
+            width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #bd2d60;
+            border-radius: 5px;
+            background-color: #a00048e0;
+            border-radius: 10px;
+        }
+
+        .contact-form h3 {
+            color: #eeb2cc;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #7e0e46;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #bd2d60;
+            color: #e2b9c2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #a00048e0;
+            border-radius: 10px;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .wrapper {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            margin-top: auto;
+            background-color: #a00048e0;
+            padding: 10px 0;
+            text-align: center;
+            color: #eeb2cc;
+            font-family: 'Pixelify Sans', sans-serif;
+        }
+
+
+        .fa-facebook-square{
+            color: #a00048e0;
+        }
+
+        .fa-envelope{
+            color: #a00048e0;
+        }
+
+        .titlez{
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+
+<nav>
+    <a href="JacobWebsite.html">Home</a>
+    <a href="JacobAbout.html">About</a>
+    <a href="JacobPortfolio.html">Portfolio</a>
+    <a class="active" href="JacobContact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="sign">
+        <div class="banner"><img src="hort.gif"></div>
+        <h2 class="titlez" style="color: #eeb2cc;">- Contact me -</h2>
+
+            <div class="contact-form">
+                <h3>-ˋˏ ༻❁༺ ˎˊ-</h3>
+                <form action="https://forms.gle/E7cEcBzCheG48YSd7" method="POST" target="hidden_iframe">
+                    <div class="form-group">
+                        <label for="name" style="color: #eeb2cc;">Name:</label>
+                        <input type="text" id="name" name="entry.123456789" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" style="color: #eeb2cc;">Email:</label>
+                        <input type="email" id="email" name="entry.987654321" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" style="color: #eeb2cc;">Message:</label>
+                        <textarea id="message" name="entry.987654321" required></textarea>
+                    </div>
+                    <button type="submit" style="font-family: Pixelify Sans, sans-serif;">Send</button>
+                </form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+            </div>
+        
+
+        <div class="contact-info">
+            <p><a href="mailto:anisiajacob1024@gmail.com" style="color: #a00048e0;"><i class="fas fa-envelope"></i> *.·:·.✧ ✦ ✧.·:·.*</a></p>
+            <p><a href="https://www.facebook.com/anisia.jacob.7/" style="color: #a00048e0;" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i> *.·:·.✧ ✦ ✧.·:·.*</a></p>
+        </div>
+            
+    </div>
+
+
+    </div>
+</div>
+
+    </div>
+
+<footer style="background-color: #a00048e0; padding: 0.1px; text-align: center; color: #eeb2cc; font-family: 'Pixelify Sans', sans-serif;">
+    <p>&copy; 2024 Anisia Jacob. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
